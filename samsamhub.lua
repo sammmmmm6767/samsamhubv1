@@ -1,16 +1,3 @@
-	Lin67 Hub — RIVALS
-UI: Material Design 3 for Roblox executors
-	    https://github.com/engnyg/Material-Design-3-Roblox-lua-ui
-
-	Paste into your executor and run. RightShift hides / shows the window.
-	Everything this script changes is restored when you press Unload.
-Theme: Lin67 Purple (#a855f7) | Icon: Syringe | Background: Customizable
-]]
-
--- Duplicate guard: the Auto Execute queue (and executors' own autoexec folders) can start
--- several copies in the same server within moments of each other, each one building the whole
--- hub. The first copy claims the server; the others stop here. A manual re-run later than
--- 20 s after the claim still replaces the running hub as usual.
 do
 	local env = (getgenv and getgenv()) or _G
 	local job = tostring(game.JobId)
